@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Open your favourable folder in vsCode, open terminal and type :" npx create-react-app one-portfolio"
+
+Visit tailwind css and insatll modify the essential things. 
+
 ## Available Scripts
 
 In the project directory, you can run:
