@@ -1,6 +1,9 @@
+import About from "./components/About";
 import Home from "./components/Home";
+import LeftSider from "./components/LeftSider";
 import NavBar from "./components/NavBar";
-import SocialLinks from "./components/SocialLinks";
+import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 
 
 function App() {
@@ -8,7 +11,10 @@ function App() {
     <div className="App">
       <NavBar/>
       <Home/>
-      <SocialLinks/>
+      <LeftSider/>
+      <About/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 }
