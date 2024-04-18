@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import myImage from "../Storage/me1.png";
 function Intro() {
     const sentences = [
         "Arup Sarkar.",
@@ -33,7 +33,7 @@ function Intro() {
                 </div>
                 {/* Add the image here */}
                 <div className="image-container w-1/3 flex justify-end">
-                    <img src="Storage/me1.png" alt="profile_Picture" className="w-full h-auto" />
+                    <img src={myImage} alt="profile_Picture" className="w-full h-auto" />
                 </div>
             </div>
         </div>

@@ -1,13 +1,14 @@
-import Footer from "./Footer";
+import Home from "./components/Home";
 import NavBar from "./components/NavBar";
-import Intro from "./components/intro";
+import SocialLinks from "./components/SocialLinks";
+
 
 function App() {
   return (
     <div className="App">
       <NavBar/>
-      <Intro/>
-      <Footer/>
+      <Home/>
+      <SocialLinks/>
     </div>
   );
 }
