@@ -4,6 +4,7 @@ import LeftSider from "./components/LeftSider";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import UsedTech from "./components/UsedTech";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Home/>
       <LeftSider/>
       <About/>
+      <UsedTech/>
       <Contact/>
       <Footer/>
     </div>

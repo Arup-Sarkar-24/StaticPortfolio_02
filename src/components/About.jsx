@@ -2,18 +2,7 @@ import React from 'react'
 import SectionTitle from './SectionTitle';
 
 export const About = () => {
-    const skills = [
-        "Java",
-        "Spring Boot",
-        "Python",
-        "Java Scripts",
-        "Angular",
-        "Node",
-        "C",
-        "C++",
-        "React",
-        "MySQL"
-    ]
+
     return (
         <div>
             <SectionTitle title="About" />
@@ -33,16 +22,7 @@ export const About = () => {
                     </p>
                 </div>
             </div>
-            <div className='py-5 bg-gradient-to-b from-gray-800 to-blue-800'>
-                <h2 className='text-tertiary text-3xl'>Technologies I have been working recently: </h2>
-                <div className='flex flex-wrap gap-10 mt-5'>
-                    {skills.map((skill, index) => (
-                        <div className='border border-tertiary py-3 px-5'>
-                            <h2 className='text-secondary text-1xl'>{skill}</h2>
-                        </div>
-                    ))}
-                </div>
-            </div>
+            
         </div>
     )
 }
