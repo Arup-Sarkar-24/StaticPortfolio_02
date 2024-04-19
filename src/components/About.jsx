@@ -4,7 +4,7 @@ import SectionTitle from './SectionTitle';
 export const About = () => {
 
     return (
-        <div>
+        <div name="about">
             <SectionTitle title="About" />
             <div className='flex w-full items-center h-screen bg-gradient-to-b from-gray-800 to-blue-800'>
                 <div className='h-[70vh] w-1/2'>

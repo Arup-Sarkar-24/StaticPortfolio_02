@@ -11,7 +11,7 @@ function SocialLinks() {
                     LinkedIn <FaLinkedin size={30} />
                 </>
             ),
-            href: '',
+            href: 'https://www.linkedin.com/in/arup-sarkar-148088255/',
             style: 'rounded-br-md',
         },
         {
@@ -20,7 +20,7 @@ function SocialLinks() {
                     Github <FaGithub size={30} />
                 </>
             ),
-            href: '',
+            href: 'https://github.com/arup-sarkar-24',
             style: 'rounded-br-md',
         },
         {

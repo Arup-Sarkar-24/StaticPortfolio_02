@@ -6,7 +6,7 @@ export const Courses = () => {
     const [selectedItemIndex, setSelectedItemIndex] = React.useState(0);
 
     return (
-        <div className="courses-section">
+        <div name="certificate">
             <SectionTitle title="Certifications" />
             <div className="flex py-10 gap-20 bg-gradient-to-b from-gray-800 to-blue-800">
                 <div></div>

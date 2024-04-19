@@ -1,36 +1,50 @@
-import React, { useState } from 'react';
-import { FaBars, FaTimes, FaHome,  FaBriefcase } from "react-icons/fa";
+import { FaHome, FaBriefcase } from "react-icons/fa";
 import { PiCertificateFill } from "react-icons/pi";
 import { FcAbout } from "react-icons/fc";
 import { IoMdContact } from "react-icons/io";
 import myImg from "../Storage/me1.png";
+import { Link } from "react-scroll";
 
 function NavBar() {
-    const [nav, setNav] = useState(false);
+    const home = 'home';
+    const about = 'about';
+    const experience = 'experience';
+    const certificate = 'certificate';
+    const contact = 'contact'; // Note the lowercase 'c' in 'contact'
 
     const links = [
         {
-            id:1,
-            link: <FaHome size={25} />
+            id: 1,
+            link: home,
+            icon: <FaHome size={25} />,
+            name: 'Home'
         },
         {
-            id:2,
-            link: <FcAbout size={25}  />
+            id: 2,
+            link: about,
+            icon: <FcAbout size={25} />,
+            name: 'About'
         },
         {
-            id:3,
-            link: <FaBriefcase size={25} />
+            id: 3,
+            link: experience,
+            icon: <FaBriefcase size={25} />,
+            name: 'Experience'
         },
         {
-            id:4,
-            link: <PiCertificateFill size={25} />
-
+            id: 4,
+            link: certificate,
+            icon: <PiCertificateFill size={25} />,
+            name: 'Certificates'
         },
         {
-            id:5,
-            link: <IoMdContact size={25} />
+            id: 5,
+            link: contact,
+            icon: <IoMdContact size={25} />,
+            name: 'Contact'
         }
     ];
+
     const downImg = [
         {
             href: '../Storage/me1.png',
@@ -47,36 +61,19 @@ function NavBar() {
                     <img src={myImg} alt='profile_pic' className='w-full h-full object-cover' />
                 </a>
             )}
-
-
-
-
             {/* Text content on the middle side */}
             <h1 className="text-secondary text-3xl ml-5">𝓐𝐫𝓤𝐏 ♔♖ ŜÃⓇ𝓀𝓪𝕣</h1>
+
             {/* Navigation links */}
             <ul className='hidden md:flex'>
-                {links.map((nav) => (
-                    <li key={nav.id}  className='px-4 cursor-pointer capitalize font-medium text-primary text-500 hover:scale-105 duration-200'>
-                        {nav.link}
+                {links.map(({ id, link, icon, name }) => (
+                    <li key={id} className='px-4 cursor-pointer capitalize font-medium text-primary text-500 hover:scale-105 duration-200'>
+                        <Link to={link} smooth duration={500} className="flex items-center space-x-2">
+                            {icon} <span>{name}</span>
+                        </Link>
                     </li>
                 ))}
             </ul>
-
-            {/* Hamburger menu icon for mobile view */}
-            <div onClick={() => setNav(!nav)} className='cursor-pointer pr-4 z-10 text-gray-500 md:hidden'>
-                {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
-            </div>
-
-            {/* Mobile navigation menu */}
-            {nav && (
-                <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500'>
-                    {links.map(({ id, link }) => (
-                        <li key={id} className='px-4 cursor-pointer capitalize py-6 text-4xl'>
-                            {link}
-                        </li>
-                    ))}
-                </ul>
-            )}
         </div>
     );
 }

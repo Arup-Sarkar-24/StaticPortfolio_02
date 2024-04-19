@@ -6,7 +6,7 @@ export const Experiences = () => {
   const [selectedItemIndex, setSelectedItemIndex] = React.useState(0);
   
   return (
-    <div className="experiences-section">
+    <div name="experience">
       <SectionTitle title="Experience" />
       <div className="experiences-container flex py-10 gap-20 bg-gradient-to-b from-gray-800 to-blue-800">
         <div></div>
