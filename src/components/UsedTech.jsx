@@ -1,15 +1,59 @@
-import React from 'react'
+import React from 'react';
+import { FaJava, FaNode, FaAngular, FaReact } from "react-icons/fa";
+import { BiLogoSpringBoot } from "react-icons/bi";
+import { SiPython, SiC, SiCplusplus, SiMysql } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io";
 const skills = [
-    "Java",
-    "Spring Boot",
-    "Python",
-    "Java Scripts",
-    "Angular",
-    "Node",
-    "C",
-    "C++",
-    "React",
-    "MySQL"
+    {
+        name:"Java",
+        icon:<FaJava />
+
+    },
+    {
+        name:"Spring Boot",
+        icon:<BiLogoSpringBoot  />
+
+    },
+    {
+        name:"Python",
+        icon:<SiPython />
+
+    },
+    {
+        name:"Java Scripts",
+        icon:<IoLogoJavascript />
+
+    },
+    {
+        name:"Angular",
+        icon:<FaAngular />
+
+    },
+    {
+        name:"Node",
+        icon:<FaNode />
+
+    },
+    {
+        name:"C",
+        icon:<SiC />
+
+    },
+    {
+        name:"C++",
+        icon:<SiCplusplus />
+
+    },
+    {
+        name:"React",
+        icon:<FaReact />
+
+    },
+    {
+        name:"MySQL",
+        icon:<SiMysql />
+
+    }
 ]
 function UsedTech() {
     return (
@@ -20,10 +64,10 @@ function UsedTech() {
                 <div>
 
                     <h2 className='text-tertiary text-3xl'>Technologies I have been working recently: </h2>
-                    <div className='flex flex-wrap gap-2 mt-2'>
-                        {skills.map((skill, index) => (
-                            <div className='border border-tertiary py-2 px-2'>
-                                <h2 className='text-secondary text-1xl'>{skill}</h2>
+                    <div className='flex flex-wrap gap-5 mt-5'>
+                        {skills.map((skill) => (
+                            <div className='border border-tertiary py-4 px-4'>
+                                <h2 className='text-secondary text-7xl'>{skill.icon}</h2>
                             </div>
                         ))}
                     </div>

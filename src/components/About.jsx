@@ -20,6 +20,9 @@ export const About = () => {
                     <p className='text-white'>
                         During my Academic journey, I build  a solid Foundation in various programing languages including C,C++,Java and Python.  And gained expertise in problem solving, OOPs, DS & Algo, exception handling concepts. To further scale up my skill-set, I pursue a training Course of Java Full stack Development from Simplilearn learn. And gaining knowledge in creating APIs, web development, Front end development with Angular, DevOps framework, life cycle and spring boot based microservice development. Which provides me a robust foundation of java backend.
                     </p>
+                    <p className='text-white'>
+                    In my free time, I enjoy a variety of hobbies that keep me active and engaged. Swimming allows me to stay fit while relaxing in the water. I also love playing online chess, where my rapid rating is 1550, as it challenges my strategic thinking. Cycling gives me the chance to explore the outdoors and clear my mind. In addition, I enjoy reading Bengali novels, which enrich my cultural understanding and provide a source of inspiration. I'm multilingual and can speak in Hindi, as well as read, write, and speak fluently in both Bengali and English.
+                    </p>
                 </div>
             </div>
             

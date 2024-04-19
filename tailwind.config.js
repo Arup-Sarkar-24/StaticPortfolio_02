@@ -9,7 +9,7 @@ export const theme = {
     }
   },
   fontFamily: {
-    signature: ["Great Vibes"],
+    
   }
 };
 export const plugins = [];

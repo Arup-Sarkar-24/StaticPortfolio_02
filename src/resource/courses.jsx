@@ -1,0 +1,68 @@
+export const courses=[
+    {
+        technologies:["core Java, J2ee,git,gradle,maven, SpringBoot"],
+        _id:"01",
+        title:"Java",
+        subTitle:"Java full-Stack Software Development training Course",
+        description:"This simplilearn's Java Full Stack Developer course is designed to introduce front-end with angular, middleware, back-end with spring boot, devops and Java web developement technologies.I learned to build an end-to-end application, test and deploy code, store data using MySql, MongoDB, and much more.",
+        link:"https://drive.google.com/file/d/1Hn0NIkTUQxqbfeOOM7morWisbcFeW_zu/view?usp=sharing",
+    },
+    {
+        technologies:["basic python, django, nosql,anaconda"],
+        _id:"02",
+        title:"Python",
+        subTitle:"Pyhton Training Certification Course",
+        description:"Simplilearn’s comprehensive Python Course and Training helped me to learn the basics of Python, data operations, conditional statements, shell scripting, and Django. This Python certification course gave me hands-on development experience and prepared me for an exciting career as a professional Python programmer.",
+        link:"https://drive.google.com/file/d/1AD6wsfzAcXSAVZq_csqFhn03H-WZRmxX/view?usp=sharing",
+    },
+    {
+        technologies:["micro-service,Java, Springboot, SpringCloud"],
+        _id:"03",
+        title:"Microservice",
+        subTitle:"Microservice with Spring Boot and Spring Clood",
+        description:"In the microservices course,I gain comprehensive knowledge and practical experience in developing and designing REST APIs and web services using Spring Boot.I learn how to build and manage microservices architecture using Spring Boot and Spring Cloud, while also mastering orchestration of microservices with Kubernetes. The course delves into creating and managing containers for microservices with Docker, allowing for efficient deployment and scalability. Additionally, you will explore essential aspects such as exception handling, validation, HATEOAS, and filtering for RESTful web services, ensuring robust and reliable web service development. This course equips me with the necessary skills to excel in building modern, scalable, and efficient microservice-based applications.",
+        link:"https://drive.google.com/file/d/1aZqoQPMe9bu6YRWenWVphcK_WVVgW0Jt/view?usp=sharing",
+    },
+    {
+        technologies:["Networking, Automation,security"],
+        _id:"04",
+        title:"CCNA",
+        subTitle:"Implementing and Administering Cisco Solutions (CCNA)",
+        description:"The Implementing and Administering Cisco Solutions (CCNA) v2.0 training gives a broad range of fundamental knowledge for all IT careers. Through a combination of lecture, hands-on labs, and self-study, learned how to install, operate, configure, and verify basic IPv4 and IPv6 networks. The training covers configuring network components such as switches, routers, and wireless LAN controllers; managing network devices; and identifying basic security threats. The training also gives me a foundation in network programmability, automation, and software-defined networking.This training helps me prepare to take the 200-301 Cisco® Certified Network Associate (CCNA®) exam.",
+        link:"https://drive.google.com/file/d/1RE-3Nq9mo2GmdrDycHVW0GPrfdSxnnvH/view?usp=sharing",
+    },
+    {
+        technologies:["Spring, SpringBoot, Spring MVC, Spring cloud"],
+        _id:"05",
+        title:"Spring Framework",
+        subTitle:"Spring Framework Master Class",
+        description:"I learn how to use Spring Annotations - @Autowired, @Component, @Service, @Repository, @Configuration, @Primary; variety of Spring Boot Starters - Spring Boot Starter Web, Starter Data Jpa, Starter Test;the basics of Eclipse, Maven, JUnit and Mockito;to write unit tests with XML, Java Application Contexts;the BASICS of Spring - Dependency Injection, IOC Container, Application Context and Bean Factory;Spring MVC in depth - DispatcherServlet , Model, Controllers and ViewResolver; the basics of Spring Boot, Spring AOP, Spring JDBC and JPA.",
+        link:"https://drive.google.com/file/d/1PXT-PA2qPDXvhOZQLBQ3zoi52ZHyizYO/view?usp=sharing",
+    },
+    {
+        technologies:["Confluence, Jira, kanban, agile"],
+        _id:"06",
+        title:"Jira",
+        subTitle:"Jira with Confluence",
+        description:"The course contents: what JIRA is, benefits of JIRA and how to use JIRA; Scrum - the stakeholders, events and overall flow of work; Kanban flow of work. I learn to Use JIRA as a user working within an agile team - creating, working on and searching for issues, customizing dashboards etc; Use JIRA as a manager of an agile team - configuring agile boards, managing the backlog, sprints and releases etc;Administer all aspects of JIRA - create users, groups, set permissions, configure issue types, screens, fields, workflows etc;Use examples presented in this course to customize and use JIRA based on your own unique needs. I Get ideas (through examples presented in the course) on how JIRA can be utilized for different scenarios or situations; Learn the basics of Confluence and Learn how I can use both JIRA and Confluence together to work better and be more productive in general",
+        link:"https://drive.google.com/file/d/1V97x4x4cQX2DwoOG3QN-Tn_x6F6qfUCp/view?usp=sharing",
+    },
+    {
+        technologies:["Cloud Architecture, Azure"],
+        _id:"07",
+        title:"Azure Framework",
+        subTitle:"Designing, Building, and Optimizing Azure Solutions with the Well-Architected Framework",
+        description:"I learn about the five pillars of the Azure Well-Architected Framework: Cost Optimization, Operational Excellence, Performance Efficiency, Reliability & Security,How to apply the framework principles to business use cases and explore the Azure services that can be used to implement these best practices. I gain insights into the core principles of each pillar and how to apply them in your Azure solutions.",
+        link:"https://drive.google.com/file/d/1GEreRBfgS06hFy2DZQ81ZeAzrUXG84FU/view?usp=sharing",
+    },
+    {
+        technologies:["Grafana, SpringBoot"],
+        _id:"08",
+        title:"Grafana",
+        subTitle:"Grafana with Spring Boot Project",
+        description:"In the Grafana course, I acquired a comprehensive understanding of various aspects of Grafana and its integration with different data sources. I learned how to effectively utilize various panels such as Graph, Stat, Gauge, Bar Gauge, Table, Text, Heatmap, and Logs for data visualization. I gained hands-on experience installing and configuring MySQL, Zabbix Server, and InfluxDB data sources along with their respective dashboards and collectors.I also mastered the use of dashboard variables to create dynamic dashboards and automate visualization placement.",
+        link:"https://drive.google.com/file/d/1JRGTqXBZcfLf9LEx45Xm1b7F05uvp2Ap/view?usp=sharing",
+    },
+    
+    
+]

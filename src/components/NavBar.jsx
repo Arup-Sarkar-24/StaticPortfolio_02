@@ -10,19 +10,24 @@ function NavBar() {
 
     const links = [
         {
+            id:1,
             link: <FaHome size={25} />
         },
         {
+            id:2,
             link: <FcAbout size={25}  />
         },
         {
+            id:3,
             link: <FaBriefcase size={25} />
         },
         {
+            id:4,
             link: <PiCertificateFill size={25} />
 
         },
         {
+            id:5,
             link: <IoMdContact size={25} />
         }
     ];
@@ -38,7 +43,7 @@ function NavBar() {
         <div className='p-5 flex justify-between items-center w-full h-15 px-4 text-white fixed' style={{ background: 'linear-gradient(to right, #2196F3, #4CAF50)' }}>
             {/* Profile image on the left side */}
             {downImg.map((down) =>
-                <a href={down.href} download={down.download} target="_blank" rel="noopener noreferrer" role="button" className="rounded-full" style={{ width: '60px', height: '60px', overflow: 'hidden' }}>
+                <a key={down.id} href={down.href} download={down.download} target="_blank" rel="noopener noreferrer" role="button" className="rounded-full" style={{ width: '60px', height: '60px', overflow: 'hidden' }}>
                     <img src={myImg} alt='profile_pic' className='w-full h-full object-cover' />
                 </a>
             )}
@@ -50,9 +55,9 @@ function NavBar() {
             <h1 className="text-secondary text-3xl ml-5">𝓐𝐫𝓤𝐏 ♔♖ ŜÃⓇ𝓀𝓪𝕣</h1>
             {/* Navigation links */}
             <ul className='hidden md:flex'>
-                {links.map(({ id, link }) => (
-                    <li className='px-4 cursor-pointer capitalize font-medium text-primary text-500 hover:scale-105 duration-200'>
-                        {link}
+                {links.map((nav) => (
+                    <li key={nav.id}  className='px-4 cursor-pointer capitalize font-medium text-primary text-500 hover:scale-105 duration-200'>
+                        {nav.link}
                     </li>
                 ))}
             </ul>

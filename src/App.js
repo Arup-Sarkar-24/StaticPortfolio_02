@@ -5,6 +5,9 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import UsedTech from "./components/UsedTech";
+import Courses from "./components/Courses";
+import Experiences from "./components/Experiences";
+import Projects from "./components/Projects";
 
 
 function App() {
@@ -15,6 +18,9 @@ function App() {
       <LeftSider/>
       <About/>
       <UsedTech/>
+      <Experiences/>
+      <Projects/>
+      <Courses/>
       <Contact/>
       <Footer/>
     </div>
