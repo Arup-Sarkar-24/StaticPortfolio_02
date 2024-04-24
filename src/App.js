@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./components/About";
 import Home from "./components/Home";
 import LeftSider from "./components/LeftSider";
@@ -8,21 +9,39 @@ import UsedTech from "./components/UsedTech";
 import Courses from "./components/Courses";
 import Experiences from "./components/Experiences";
 import Projects from "./components/Projects";
+import { useState } from "react";
+import Loader from "./components/Loader";
+{/* import TypingBox from "./components/TypingBox"; */}
+{/* import TextBox from "./components/TextBox"; */}
 
 
 function App() {
+  const [showLoading, /*setShowLoading*/] = useState(false);
   return (
     <div className="App">
-      <NavBar/>
-      <Home/>
-      <LeftSider/>
-      <About/>
-      <UsedTech/>
-      <Experiences/>
-      <Projects/>
-      <Courses/>
-      <Contact/>
-      <Footer/>
+      <BrowserRouter>
+        {showLoading ? <Loader/>:null}
+        <Routes>
+          <Route path="/" element={
+            <>
+              <NavBar/>
+              <Home/>
+              {/*<TextBox/>
+              <TypingBox/>
+          */}
+              <LeftSider/>
+              <About/>
+              <UsedTech/>
+              <Experiences/>
+              <Projects/>
+              <Courses/>
+              <Contact/>
+              <Footer/>
+            </>
+          }/>
+        </Routes>
+      </BrowserRouter>
+      
     </div>
   );
 }

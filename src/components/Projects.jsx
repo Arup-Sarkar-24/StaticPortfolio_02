@@ -21,7 +21,7 @@ export const Projects = () => {
                     ))}
                 </div>
                 <div className='flex items-center justify-center gap-10'>
-                    <div className='flex flex-col gap-5'>
+                    <div className='flex flex-col flex-wrap gap-5'>
                         <h2 className='text-tertiary text-xl'>
                             <a
                                 href={projects[selectedItemIndex].link}
@@ -31,6 +31,7 @@ export const Projects = () => {
                             >
                                 {projects[selectedItemIndex].title}
                             </a>
+                            <p>{projects[selectedItemIndex].technologies}</p>
                         </h2>
                         <p className='text-white'>{projects[selectedItemIndex].description}</p>
                     </div>

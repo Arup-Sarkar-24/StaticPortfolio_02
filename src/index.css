@@ -4,3 +4,50 @@
 
 @layer base{
 }
+
+
+/* loader animation*/
+.a {
+    animation: a 1s infinite;
+}
+@keyframes a{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0.5;
+    }
+}
+
+.s{
+    animation: s 1s infinite;
+}
+@keyframes s{
+    0%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.5;
+    }
+}
+
+.r{
+    animation: r 1s infinite;
+}
+@keyframes s{
+    0%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}

@@ -6,9 +6,8 @@ export const SectionTitle = ({ title }) => {
       <div></div>
       <div></div>
       <div></div>
-      <h2 className='text-3xl text-white  font-semibold'>{title}</h2>
-      <div className='w-80 h-[1px] bg-tertiary'>
-
+        <h2 className='text-3xl  text-white  font-semibold md:text-1xl'>{title}</h2>
+        <div className='w-80 h-[1px] bg-tertiary'>
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ export const projects=[
         link:"https://github.com/Arup-Sarkar-24/MicroSevicesDemo.git",
     },
     {
-        technologies:["Angular","Spring boot","Mysql","BootStrap"],
+        technologies:["Angular, Spring boot, Mysql, BootStrap"],
         _id:"02",
         title:"Employee Management System",
         description:`The Employee Management System is a comprehensive application designed to streamline the administration and handling of employee data within an organization. This system provides a range of features to efficiently manage employee information, including the following key functionalities:
